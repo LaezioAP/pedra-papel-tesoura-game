@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedra Papel Tesoura Game</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <script src="../script/app.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Pedra Papel Tesoura Game!</h1>
+    </header>
+
+    <div class="score-board">
+        <div id="user-label" class="badge">jogador</div>
+        <div id="comp-label" class="badge">comp</div>
+        <span id="user-score">0</span>:<span id="comp-score">0</span>
+    </div>
+
+    <div class="result">
+        <p>Papel vence de pedra. You win!</p>
+    </div>
+
+    <div class="choices">
+        <div class="choice" id="rock">
+            <img src="../assets/hand-rock.png" alt="rock">
+        </div>
+        <div class="choice" id="paper">
+            <img src="../assets/hand-paper.png" alt="paper">
+        </div>
+        <div class="choice" id="scissors">
+            <img src="../assets/hand-scissors.png" alt="scissors">
+        </div>
+    </div>
+
+    <p id="action-message">Faça sua jogada!</p>
+</body>
+</html>
