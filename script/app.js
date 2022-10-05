@@ -30,14 +30,14 @@ const lose = (userChoice, computerChoice) => {
     const userChoiceDiv = document.getElementById(userChoice);
     computerScore++;
     computerSpan.textContent = computerScore;
-    result_p.innerHTML = `${convertWord(userChoice)}<sub>user</sub> perde para ${convertWord(computerChoice)}<sub>comp</sub>. Você perdeu... `;
+    result_p.innerHTML = `${convertWord(userChoice)}<sub>user</sub> perde para ${convertWord(computerChoice)}<sub>comp</sub>. Você perdeu... 😰`;
     userChoiceDiv.classList.add('red-glow');
     setTimeout(() => userChoiceDiv.classList.remove('red-glow'), 400);
 }
 
 const draw = (userChoice, computerChoice) => {
     const userChoiceDiv = document.getElementById(userChoice);
-    result_p.innerHTML = `${convertWord(userChoice)}<sub>user</sub> empate ${convertWord(computerChoice)}<sub>comp</sub>`;
+    result_p.innerHTML = `${convertWord(userChoice)}<sub>user</sub> empate ${convertWord(computerChoice)}<sub>comp</sub> 😐`;
     userChoiceDiv.classList.add('gray-glow');
     setTimeout(() => userChoiceDiv.classList.remove('gray-glow'), 400);
 }
